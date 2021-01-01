@@ -1,6 +1,7 @@
 # TracyWidom
 
-[![PyPI version](https://img.shields.io/pypi/v/TracyWidom.svg)](https://pypi.python.org/pypi/TracyWidom)
+[![Conda Version](https://img.shields.io/conda/vn/conda-forge/tracywidom.svg)](https://anaconda.org/conda-forge/tracywidom)
+[![PyPI Version](https://img.shields.io/pypi/v/TracyWidom.svg)](https://pypi.python.org/pypi/TracyWidom)
 
 Providing the Tracy-Widom distribution functions for beta = 1, 2, or 4 in Python.
 
@@ -9,7 +10,13 @@ and the asymptotics in http://arxiv.org/abs/1111.2761.
 
 ## Installation
 
+You can install `tracywidom` via conda or pip:
+
 ```bash
+# Install via conda with the conda-forge channel
+conda install tracywidom --channel conda-forge
+
+# Or, install via pip
 pip install tracywidom
 ```
 
