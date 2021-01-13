@@ -5,8 +5,16 @@
 
 Providing the Tracy-Widom distribution functions for beta = 1, 2, or 4 in Python.
 
-This package uses the interpolation tables in http://www.cl.cam.ac.uk/~aib29/TWinSplus.pdf
-and the asymptotics in http://arxiv.org/abs/1111.2761.
+This package uses the interpolation tables in 
+
+- Bejan, Andrei Iu. (2005), Largest eigenvalues and sample covariance matrices. Tracy–Widom and Painleve II: Computational aspects and realization in S-Plus with applications, M.Sc. dissertation, Department of Statistics, The University of Warwick.
+
+and the asymptotics in
+
+- Borot, Gaëtan and Nadal, Céline (2012), Right tail expansion of Tracy-Widom beta laws, Random Matrices: Theory and Applications Vol. 01, No. 03, 1250006. ([arXiv:1111.2761](https://arxiv.org/abs/1111.2761))
+
+This package is MIT licensed. If you use this package in your work, please consider citing the above publications and listing the URL of this package (`https://github.com/yymao/TracyWidom/`). 
+
 
 ## Installation
 
