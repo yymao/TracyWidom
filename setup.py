@@ -6,7 +6,7 @@ Author: Yao-Yuan Mao (yymao)
 Project website: https://github.com/yymao/TracyWidom
 
 The MIT License (MIT)
-Copyright (c) 2013-2021 Yao-Yuan Mao
+Copyright (c) 2013-2025 Yao-Yuan Mao
 http://opensource.org/licenses/MIT
 """
 
@@ -43,13 +43,15 @@ setup(
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python',
         'Programming Language :: Python :: 2.7',
-        'Programming Language :: Python :: 3.6',
-        'Programming Language :: Python :: 3.7',
-        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
+        'Programming Language :: Python :: 3.12',
+        'Programming Language :: Python :: 3.13',
         'Topic :: Scientific/Engineering :: Mathematics',
         'Topic :: Scientific/Engineering :: Physics',
     ],
     keywords='Tracy-Widom',
     py_modules=["TracyWidom"],
-    install_requires=['numpy>=1.7.0', 'scipy>=0.13.0'],
+    install_requires=["numpy>=1.7", "scipy>=0.13", "numdifftools>=0.9.41"],
 )
