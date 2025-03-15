@@ -13,16 +13,18 @@ from __future__ import division
 import numpy as np
 from scipy.interpolate import interp1d
 from scipy.optimize import brentq
-import numdifftools as nd
 
-
-def derivative(func, x0, dx=1.0, n=1, args=(), order=3):
-    """
-    Replacing scipy.misc.derivative, but ignoring dx and order
-    Thanks to @junobonnie for the suggestion
-    """
-    f = nd.Derivative(func, n=n)
-    return f(x0, *args)
+try:
+    from scipy.misc import derivative
+except ImportError:
+    import numdifftools as nd
+    def derivative(func, x0, dx=1.0, n=1, args=(), order=3):
+        """
+        Replacing scipy.misc.derivative, but ignoring dx and order
+        Thanks to @junobonnie for the suggestion
+        """
+        f = nd.Derivative(func, n=n)
+        return f(x0, *args)
 
 
 __all__ = ['TracyWidom']

@@ -42,15 +42,16 @@ setup(
         'Intended Audience :: Science/Research',
         'License :: OSI Approved :: MIT License',
         'Programming Language :: Python',
+        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3.9',
         'Programming Language :: Python :: 3.10',
         'Programming Language :: Python :: 3.11',
         'Programming Language :: Python :: 3.12',
-
+        'Programming Language :: Python :: 3.13',
         'Topic :: Scientific/Engineering :: Mathematics',
         'Topic :: Scientific/Engineering :: Physics',
     ],
     keywords='Tracy-Widom',
     py_modules=["TracyWidom"],
-    install_requires=["numpy>=1.8", "scipy>=1.0", "numdifftools>=0.9.41"],
+    install_requires=["numpy>=1.7", "scipy>=0.13", "numdifftools>=0.9.41"],
 )
